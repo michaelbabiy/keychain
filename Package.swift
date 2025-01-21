@@ -33,7 +33,7 @@ let package = Package(
             name: "KeychainAccess",
             path: "Framework/KeychainAccess",
             swiftSettings: [
-                .define("ENABLE_LIBRARY_EVOLUTION", .when(configuration: .release)),
+                .define("ENABLE_LIBRARY_EVOLUTION", .when(configuration: .debug)),
                 .swiftLanguageMode(.v6)
             ]
         )
